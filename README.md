@@ -1,16 +1,53 @@
-# React + Vite
+# MuskanFlix 🎬
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A Netflix-inspired developer portfolio showcasing my projects, skills, and experience.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** Add your live website link here.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Netflix-style UI with project cards
+- Fully responsive design
+- Smooth hover effects and navigation
+- Sections for projects, skills, and contact
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- React.js
+- JavaScript (ES6+)
+- Vite
+- Tailwind CSS
+- GSAP (including ScrollTrigger)
+- Framer Motion
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Run Locally
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Muskan-Kumari708/muskanflix.git
+   ```
+
+2. Go to the project folder:
+
+   ```bash
+   cd muskanflix
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the project:
+
+   ```bash
+   npm run dev
+   ```
+
+## Author
+
+**Muskan Kumari**
+
+[LinkedIn](https://www.linkedin.com/in/muskan-kumari-a00784414/) | [GitHub](https://github.com/Muskan-Kumari708)

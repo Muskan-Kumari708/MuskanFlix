@@ -4,71 +4,31 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-// Authentic Project Data based on your engineering portfolio
+// Projects from Muskan's portfolio
 const projectsData = [
   {
-    title: "Notice Hub",
-    category: "Full-Stack Architecture",
-    description: "Consolidates university announcements and streamlines real-time student communication with high uptime.",
-    tags: ["React", "Node.js", "Express", "MongoDB"],
-    match: "99%",
+    title: "Blogify",
+    category: "Full-Stack Blog Application",
+    description: "A full-stack blogging platform with post CRUD, secure cookie-based authentication, comments, and cover image uploads.",
+    tags: ["Node.js", "Express", "MongoDB", "EJS", "Multer"],
+    match: "100%",
     episode: "S01 E01"
   },
   {
-    title: "Multi-Tenant SaaS Platform",
-    category: "Cloud & Distributed Systems",
-    description: "Containerized enterprise SaaS featuring strict database isolation and granular role-based access control.",
-    tags: ["Docker", "PostgreSQL", "Node.js", "Express"],
-    match: "98%",
+    title: "Zeptro",
+    category: "E-Commerce Frontend Application",
+    description: "A responsive quick-commerce storefront with product listings, cart, pagination, filtering, and Clerk authentication.",
+    tags: ["React", "Tailwind CSS", "Clerk", "JavaScript"],
+    match: "100%",
     episode: "S01 E02"
   },
   {
-    title: "Payment Gateway System",
-    category: "Fintech Architecture",
-    description: "Simulates complex transaction state management, webhook verification, and multi-method processing.",
-    tags: ["JavaScript", "PostgreSQL", "REST APIs", "Docker"],
-    match: "97%",
-    episode: "S01 E03"
-  },
-  {
-    title: "Productivity Suite Extension",
-    category: "Client-Side Engineering",
-    description: "Custom Chrome extension built with Chrome APIs and advanced JavaScript for task automation and management.",
-    tags: ["JavaScript", "Chrome APIs", "Tailwind CSS", "HTML5"],
-    match: "99%",
-    episode: "S01 E04"
-  },
-  {
-    title: "AI & ML Diagnostic Engine",
-    category: "Artificial Intelligence",
-    description: "Intelligent data processing pipeline leveraging machine learning models and NLP workflows.",
-    tags: ["Python", "Machine Learning", "NLP", "AWS"],
-    match: "96%",
-    episode: "S01 E05"
-  },
-  {
-    title: "Algorithmic Problem Solver",
-    category: "Competitive Programming",
-    description: "Optimized data structure solutions across LeetCode, CodeChef, and GeeksforGeeks platforms.",
-    tags: ["Data Structures", "Algorithms", "C++", "JavaScript"],
-    match: "99%",
-    episode: "S01 E06"
-  },
-  {
-    title: "Portfolio Cinematics v2.6",
-    category: "UI/UX & Animation",
-    description: "Award-winning dark studio interactive portfolio featuring GSAP physics and responsive layouts.",
-    tags: ["React", "GSAP", "Tailwind CSS", "Framer Motion"],
+    title: "Appwrite-MegaBlog",
+    category: "Full-Stack Blog Application",
+    description: "A real-world blog application with complete post CRUD: create, read, update, and delete blog content using Appwrite.",
+    tags: ["Appwrite", "React", "CRUD", "JavaScript"],
     match: "100%",
-    episode: "S01 E07"
-  },
-  {
-    title: "Cloud CI/CD Pipeline",
-    category: "DevOps & Infrastructure",
-    description: "Automated deployment workflows using GitHub Actions and containerized Docker environments.",
-    tags: ["Docker", "GitHub Actions", "CI/CD", "Render"],
-    match: "98%",
-    episode: "S01 E08"
+    episode: "S01 E03"
   }
 ];
 
@@ -90,12 +50,7 @@ const Projects = () => {
       gsap.set(folderFrontRef.current, { transformOrigin: "bottom center" });
       
       const getGridPos = (index) => {
-        let row, col;
-        if (index < 3) { row = 0; col = index; }
-        else if (index === 3) { row = 1; col = 0; }
-        else if (index === 4) { row = 1; col = 2; }
-        else { row = 2; col = index - 5; }
-        return { row, col };
+        return { row: 1, col: index };
       };
 
       cardsRef.current.forEach((card) => {

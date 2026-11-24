@@ -6,40 +6,40 @@ gsap.registerPlugin(ScrollTrigger);
 
 const skillCategories = [
   { 
-    title: 'Frontend Engineering', 
-    desc: 'Crafting responsive and interactive user interfaces using React, JavaScript, HTML5, CSS3, and Tailwind CSS.', 
+    title: 'Languages', 
+    desc: 'Programming languages used across coursework, problem solving, and web development.', 
     tag: 'UI / INTERACTION',
-    skills: ['React', 'JavaScript', 'Tailwind CSS', 'HTML5', 'CSS3'] 
+    skills: ['Java', 'Python', 'C', 'JavaScript (ES6)'] 
   },
   { 
     title: 'Backend & Databases', 
-    desc: 'Building secure REST APIs, authentication flows, server-side applications, and high-performance database architectures.', 
+    desc: 'Building responsive web interfaces and full-stack applications with modern frontend tools.', 
     tag: 'ARCHITECTURE',
-    skills: ['Node.js', 'Express', 'PostgreSQL', 'MongoDB', 'DQL'] 
+    skills: ['HTML5', 'CSS3', 'React.js', 'React Router', 'Redux Toolkit', 'Context API', 'Tailwind CSS', 'Bootstrap'] 
   },
   { 
-    title: 'AI & Machine Learning', 
-    desc: 'Developing intelligent applications leveraging NLP, generative AI workflows, computer vision, and LLM systems.', 
-    tag: 'INTELLIGENCE',
-    skills: ['NLP', 'Generative AI', 'Computer Vision', 'LLMs', 'AWS AI'] 
+    title: 'Backend & Databases', 
+    desc: 'Creating server-side applications, REST API integrations, and authentication flows.', 
+    tag: 'BACKEND',
+    skills: ['Node.js', 'Express.js', 'MongoDB', 'EJS', 'REST APIs', 'Clerk', 'Cookies', 'Password Hashing'] 
   },
   { 
-    title: 'Cloud & DevOps', 
-    desc: 'Deploying and scaling production-grade applications using Docker containers, GitHub Actions, and CI/CD pipelines.', 
-    tag: 'INFRASTRUCTURE',
-    skills: ['Docker', 'GitHub', 'CI/CD Pipelines', 'Render', 'Docker Hub'] 
+    title: 'Tools & Platforms', 
+    desc: 'Using development tools and platforms for source control, coding, and application workflows.', 
+    tag: 'TOOLKIT',
+    skills: ['Git', 'GitHub', 'VS Code', 'IntelliJ IDEA', 'Appwrite', 'n8n'] 
   },
   { 
     title: 'Algorithmic Problem Solving', 
     desc: 'Optimizing data structures and solving complex algorithmic challenges across competitive programming platforms.', 
     tag: 'COMPETITIVE',
-    skills: ['Data Structures', 'Algorithms', 'LeetCode', 'CodeChef', 'GFG'] 
+    skills: ['Data Structures', 'Algorithms', 'OOP', 'Java Collection Framework', 'LeetCode'] 
   },
   { 
     title: 'Tools & Ecosystem', 
-    desc: 'Equipped with industry-grade instruments for version control, productivity extensions, and workflow management.', 
-    tag: 'PRODUCTIVITY',
-    skills: ['Git', 'Chrome APIs', 'Adobe Express', 'Google Cloud', 'VS Code'] 
+    desc: 'Building clear, usable layouts that adapt across screen sizes and devices.', 
+    tag: 'RESPONSIVE DESIGN',
+    skills: ['Responsive Web Design', 'HTML5', 'CSS3', 'Bootstrap', 'Tailwind CSS'] 
   },
 ];
 

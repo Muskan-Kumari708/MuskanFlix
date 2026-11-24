@@ -107,17 +107,17 @@ const About = () => {
             <div className="space-y-5 relative z-10">
               <h3 className="text-xs font-mono uppercase tracking-widest text-red-500 font-bold">Cast & Background</h3>
               <p className="text-lg md:text-xl font-medium text-white/90 leading-relaxed">
-                I am <span className="text-white font-bold drop-shadow">Dasari Venkata Ratna Sri Sushmita</span>, a B.Tech student in Artificial Intelligence and Machine Learning at Aditya Engineering College.
+                I am <span className="text-white font-bold drop-shadow">Muskan Kumari</span>, a Computer Science Engineering student at R P Sharma Institute of Technology, Patna.
               </p>
               <p className="text-sm md:text-base text-white/60 font-light leading-relaxed">
-                My technical narrative bridges rigorous algorithmic problem-solving with full-stack software architecture, translating complex backend logic into seamless, high-performance interfaces.
+                I specialize in full-stack and backend development, building responsive web applications with React, Node.js, Express, and MongoDB. I am seeking a Full Stack or Backend internship where I can contribute to real projects and keep growing as a developer.
               </p>
             </div>
             
             <div className="pt-8 flex flex-wrap gap-2 relative z-10">
-              <span className="px-3.5 py-1.5 rounded bg-white/5 border border-white/10 text-xs font-mono text-white/80">AI & ML</span>
+              <span className="px-3.5 py-1.5 rounded bg-white/5 border border-white/10 text-xs font-mono text-white/80">Computer Science Engineering</span>
               <span className="px-3.5 py-1.5 rounded bg-white/5 border border-white/10 text-xs font-mono text-white/80">Full-Stack Development</span>
-              <span className="px-3.5 py-1.5 rounded bg-white/5 border border-white/10 text-xs font-mono text-white/80">System Architecture</span>
+              <span className="px-3.5 py-1.5 rounded bg-white/5 border border-white/10 text-xs font-mono text-white/80">2024 – 2028</span>
             </div>
           </div>
 
@@ -143,21 +143,21 @@ const About = () => {
               <ul className="space-y-3.5 text-sm text-white/80 font-light">
                 <li className="flex items-start gap-2.5">
                   <span className="text-red-500 font-bold">&#8250;</span>
-                  <span>National Semi-Finalist in <strong className="text-white">Flipkart GRiD 7.0</strong> competition.</span>
+                  <span>Solved <strong className="text-white">100+ LeetCode problems</strong> across arrays, strings, recursion, linked lists, stacks, queues, and hash maps.</span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <span className="text-red-500 font-bold">&#8250;</span>
-                  <span>Member of the elite <strong className="text-white">AlgoUniversity Tech Fellowship</strong> for advanced data structures.</span>
+                  <span>Strong foundation in <strong className="text-white">Data Structures, Algorithms, OOP, and Java Collections</strong>.</span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <span className="text-red-500 font-bold">&#8250;</span>
-                  <span>Certified <strong className="text-white">GitHub Foundations</strong> & <strong className="text-white">AWS Certified AI Practitioner</strong>.</span>
+                  <span>A <strong className="text-white">quick learner</strong> who takes feedback positively and brings attention to detail, punctuality, and reliability.</span>
                 </li>
               </ul>
             </div>
             
             <div className="pt-6 font-mono text-xs text-white/40 relative z-10">
-              // SEASON_01 HIGHLIGHTS
+              // ACHIEVEMENTS & STRENGTHS
             </div>
           </div>
 
@@ -175,12 +175,13 @@ const About = () => {
             ></div>
 
             <div className="space-y-2 text-left relative z-10">
-              <h3 className="text-xs font-mono uppercase tracking-widest text-red-500 font-bold">Production Tech Stack</h3>
-              <p className="text-base md:text-lg font-semibold text-white">Equipped with industry-grade instruments for robust scaling.</p>
+              <h3 className="text-xs font-mono uppercase tracking-widest text-red-500 font-bold">Education</h3>
+              <p className="text-base md:text-lg font-semibold text-white">B.Tech in Computer Science Engineering · 2024–2028</p>
+              <p className="text-sm text-white/60">R P Sharma Institute of Technology (RPSIT), Patna · Affiliated to Bihar Engineering University (BEU), Patna</p>
             </div>
             
             <div className="flex flex-wrap items-center gap-3 relative z-10">
-              {['React', 'Node.js', 'Express', 'PostgreSQL', 'MongoDB', 'Docker', 'JavaScript'].map((tech, idx) => (
+              {['Java', 'Python', 'C', 'JavaScript', 'React', 'Redux Toolkit', 'Tailwind CSS', 'Bootstrap', 'Node.js', 'Express', 'MongoDB', 'EJS', 'Appwrite', 'n8n'].map((tech, idx) => (
                 <span
                   key={idx}
                   className="px-4 py-2 rounded bg-white/[0.04] border border-white/10 text-xs font-mono uppercase tracking-wider text-white shadow-inner hover:bg-red-600/20 hover:border-red-600/40 hover:scale-105 transition-all"
