@@ -2,7 +2,7 @@
 
 A Netflix-inspired developer portfolio showcasing my projects, skills, and experience.
 
-🔗 **Live Demo:** Add your live website link here.
+🔗 **Live Demo:** [muskan-flix.vercel.app](https://muskan-flix.vercel.app/)
 
 ## Features
 
