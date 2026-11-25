@@ -1,8 +1,10 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import { useForm, ValidationError } from '@formspree/react';
 
 const Contact = () => {
   const ref = useRef(null);
+  const [submissionState, submitToFormspree] = useForm('xzerylvl');
   
   // React Form State tracking
   const [formData, setFormData] = useState({
@@ -30,19 +32,21 @@ const Contact = () => {
     }));
   };
 
-  // Handle form submission logic
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  useEffect(() => {
+    if (submissionState.succeeded) {
+      setFormData({ firstName: '', lastName: '', email: '', message: '', permission: false });
+    }
+  }, [submissionState.succeeded]);
 
+  // Submit the details to the connected Formspree inbox.
+  const handleSubmit = (e) => {
     if (!formData.permission) {
+      e.preventDefault();
       alert("Please accept the contact permission checkbox.");
       return;
     }
 
-    console.log("Form Data Submitted Successfully:", formData);
-    alert(`Thanks ${formData.firstName}! Message captured successfully.`);
-    
-    setFormData({ firstName: '', lastName: '', email: '', message: '', permission: false });
+    submitToFormspree(e);
   };
 
   return (
@@ -95,6 +99,7 @@ const Contact = () => {
                   <input 
                     type="text" 
                     id="firstName" 
+                    name="firstName"
                     value={formData.firstName}
                     onChange={handleChange}
                     placeholder="First Name" 
@@ -106,6 +111,7 @@ const Contact = () => {
                   <input 
                     type="text" 
                     id="lastName" 
+                    name="lastName"
                     value={formData.lastName}
                     onChange={handleChange}
                     placeholder="Last Name" 
@@ -117,12 +123,14 @@ const Contact = () => {
                   <input 
                     type="email" 
                     id="email" 
+                    name="email"
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="Email Address" 
                     required
                     className="w-full bg-transparent border-b border-white/20 pb-3 text-lg focus:outline-none focus:border-red-600 transition-colors placeholder-white/40 font-medium rounded-none text-white"
                   />
+                  <ValidationError prefix="Email" field="email" errors={submissionState.errors} />
                 </div>
               </div>
 
@@ -131,12 +139,14 @@ const Contact = () => {
                 <div className="relative h-full flex flex-col">
                   <textarea 
                     id="message" 
+                    name="message"
                     value={formData.message}
                     onChange={handleChange}
                     placeholder="Type your message here..." 
                     required
                     className="w-full h-full min-h-[140px] bg-transparent border-b border-white/20 pb-3 text-lg focus:outline-none focus:border-red-600 transition-colors placeholder-white/40 font-medium resize-none rounded-none text-white"
                   ></textarea>
+                  <ValidationError prefix="Message" field="message" errors={submissionState.errors} />
                 </div>
               </div>
             </div>
@@ -170,14 +180,23 @@ const Contact = () => {
                   
                   <button 
                     type="submit" 
+                    disabled={submissionState.submitting}
                     className="px-8 py-3.5 rounded bg-red-600 text-white font-bold uppercase tracking-widest text-xs flex items-center justify-center gap-3 hover:bg-red-700 transition-all duration-300 group whitespace-nowrap shadow-[0_0_20px_rgba(229,9,20,0.6)] hover:scale-105"
                   >
-                    Send Message
+                    {submissionState.submitting ? 'Sending...' : 'Send Message'}
                     <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                     </svg>
                   </button>
                 </div>
+                {submissionState.succeeded && (
+                  <p className="text-sm text-green-400 font-medium" role="status">
+                    Thanks! Your message has been sent successfully.
+                  </p>
+                )}
+                {submissionState.errors && (
+                  <ValidationError prefix="Unable to send" errors={submissionState.errors} />
+                )}
               </div>
             </div>
           </form>

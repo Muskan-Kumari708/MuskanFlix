@@ -27,7 +27,7 @@ const skillCategories = [
     title: 'Tools & Platforms', 
     desc: 'Using development tools and platforms for source control, coding, and application workflows.', 
     tag: 'TOOLKIT',
-    skills: ['Git', 'GitHub', 'VS Code', 'IntelliJ IDEA', 'Appwrite', 'n8n'] 
+    skills: ['Git', 'GitHub', 'VS Code', 'IntelliJ IDEA', 'Appwrite', 'n8n', 'Cursor', 'Trae', 'Lovable', 'Bolt.new', 'Google Antigravity', 'Grok', 'ChatGPT', 'Gemini', 'Claude']
   },
   { 
     title: 'Algorithmic Problem Solving', 
@@ -220,7 +220,7 @@ const Skills = () => {
                 {category.tag}
               </span>
               <span className="text-xs font-mono text-white/40">
-                [ 0{i + 1} / 06 ]
+                [ 0{i + 1} / {String(skillCategories.length).padStart(2, '0')} ]
               </span>
             </div>
 
