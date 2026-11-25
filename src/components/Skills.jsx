@@ -19,9 +19,9 @@ const skillCategories = [
   },
   { 
     title: 'Backend & Databases', 
-    desc: 'Creating server-side applications, REST API integrations, and authentication flows.', 
+    desc: 'Creating server-side applications and working with databases.',
     tag: 'BACKEND',
-    skills: ['Node.js', 'Express.js', 'MongoDB', 'EJS', 'REST APIs', 'Clerk', 'Cookies', 'Password Hashing'] 
+    skills: ['Node.js', 'Express.js', 'MongoDB', 'EJS']
   },
   { 
     title: 'Tools & Platforms', 

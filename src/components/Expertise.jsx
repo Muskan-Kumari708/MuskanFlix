@@ -15,15 +15,15 @@ const expertiseData = [
   {
     number: "02",
     title: "Backend Development",
-    text: "Developing backend applications with Node.js and Express, integrating REST APIs, MongoDB, and authentication flows.",
-    tag: "API & ARCHITECTURE",
+    text: "Developing server-side applications with Node.js, Express, and MongoDB.",
+    tag: "BACKEND & DATA",
     gradient: "from-[#1a0809] via-[#111111] to-[#090909]"
   },
   {
     number: "03",
-    title: "Authentication & Application Features",
-    text: "Implementing sign-in experiences, cookie-based sessions, password hashing, and user-focused features in web applications.",
-    tag: "AUTH & WEB APPS",
+    title: "Web Application Development",
+    text: "Creating interactive web experiences with thoughtful layouts and useful features.",
+    tag: "WEB APPLICATIONS",
     gradient: "from-[#220a0d] via-[#131313] to-[#0a0a0a]"
   },
   {

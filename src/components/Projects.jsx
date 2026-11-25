@@ -9,7 +9,7 @@ const projectsData = [
   {
     title: "Blogify",
     category: "Full-Stack Blog Application",
-    description: "A full-stack blogging platform with post CRUD, secure cookie-based authentication, comments, and cover image uploads.",
+    description: "A full-stack blogging platform with post management, comments, and cover image uploads.",
     tags: ["Node.js", "Express", "MongoDB", "EJS", "Multer"],
     match: "100%",
     episode: "S01 E01"
@@ -17,8 +17,8 @@ const projectsData = [
   {
     title: "Zeptro",
     category: "E-Commerce Frontend Application",
-    description: "A responsive quick-commerce storefront with product listings, cart, pagination, filtering, and Clerk authentication.",
-    tags: ["React", "Tailwind CSS", "Clerk", "JavaScript"],
+    description: "A responsive quick-commerce storefront with product listings, cart, pagination, and filtering.",
+    tags: ["React", "Tailwind CSS", "JavaScript"],
     match: "100%",
     episode: "S01 E02"
   },

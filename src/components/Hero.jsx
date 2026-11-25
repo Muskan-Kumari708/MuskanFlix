@@ -210,11 +210,11 @@ const Hero = () => {
               <span className="text-white/40">•</span>
               <span>React • Node.js • MongoDB</span>
               <span className="text-white/40">•</span>
-              <span className="text-white/70">REST APIs & Auth</span>
+              <span className="text-white/70">Web Development</span>
             </div>
 
             <p className="hero-anim-item text-sm md:text-base text-white/80 font-light leading-relaxed max-w-md drop-shadow">
-              Computer Science Engineering student specializing in full-stack and backend development. I build responsive web apps, implement authentication, and integrate REST APIs.
+              Computer Science Engineering student specializing in full-stack and backend development. I build responsive web apps and engaging digital experiences.
             </p>
 
             {/* Action Button Set */}
@@ -312,12 +312,21 @@ const Hero = () => {
           <a href="#projects" className="hover:text-red-500 transition-colors">Projects</a>
           <a href="#contact" className="hover:text-red-500 transition-colors">Contact</a>
         </nav>
-        <a
-          href="mailto:mk7035506@gmail.com"
-          className="px-5 py-2 rounded bg-red-600 hover:bg-red-700 text-white font-bold text-xs uppercase tracking-widest transition-all duration-300 shadow-[0_0_20px_rgba(229,9,20,0.6)] hover:scale-105 active:scale-95"
-        >
-          Hire Me
-        </a>
+        <div className="flex items-center gap-2">
+          <a
+            href="/Muskan_Kumari_Resume.pdf"
+            download="Muskan_Kumari_Resume.pdf"
+            className="px-3 sm:px-5 py-2 rounded border border-white/30 bg-black/70 hover:bg-white hover:text-black text-white font-bold text-[10px] sm:text-xs uppercase tracking-wider sm:tracking-widest transition-all duration-300 hover:scale-105 active:scale-95 whitespace-nowrap"
+          >
+            Download Resume
+          </a>
+          <a
+            href="mailto:mk7035506@gmail.com"
+            className="px-3 sm:px-5 py-2 rounded bg-red-600 hover:bg-red-700 text-white font-bold text-[10px] sm:text-xs uppercase tracking-wider sm:tracking-widest transition-all duration-300 shadow-[0_0_20px_rgba(229,9,20,0.6)] hover:scale-105 active:scale-95 whitespace-nowrap"
+          >
+            Hire Me
+          </a>
+        </div>
       </header>
     </section>
   );

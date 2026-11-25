@@ -118,6 +118,7 @@ const Contact = () => {
                     required
                     className="w-full bg-transparent border-b border-white/20 pb-3 text-lg focus:outline-none focus:border-red-600 transition-colors placeholder-white/40 font-medium rounded-none text-white"
                   />
+                  <ValidationError prefix="Email" field="email" errors={submissionState.errors} />
                 </div>
                 <div className="relative">
                   <input 
@@ -130,7 +131,6 @@ const Contact = () => {
                     required
                     className="w-full bg-transparent border-b border-white/20 pb-3 text-lg focus:outline-none focus:border-red-600 transition-colors placeholder-white/40 font-medium rounded-none text-white"
                   />
-                  <ValidationError prefix="Email" field="email" errors={submissionState.errors} />
                 </div>
               </div>
 
