@@ -181,7 +181,7 @@ const About = () => {
             </div>
             
             <div className="flex flex-wrap items-center gap-3 relative z-10">
-              {['Java', 'Python', 'C', 'JavaScript', 'React', 'Redux Toolkit', 'Tailwind CSS', 'Bootstrap', 'Node.js', 'Express', 'MongoDB', 'EJS', 'Appwrite', 'n8n'].map((tech, idx) => (
+              {['Java', 'Python', 'C', 'JavaScript', 'React', 'Redux Toolkit', 'Tailwind CSS', 'Bootstrap', 'Node.js', 'Express', 'MongoDB', 'EJS'].map((tech, idx) => (
                 <span
                   key={idx}
                   className="px-4 py-2 rounded bg-white/[0.04] border border-white/10 text-xs font-mono uppercase tracking-wider text-white shadow-inner hover:bg-red-600/20 hover:border-red-600/40 hover:scale-105 transition-all"
