@@ -27,7 +27,7 @@ const skillCategories = [
     title: 'Tools & Platforms', 
     desc: 'Using development tools and platforms for source control, coding, and application workflows.', 
     tag: 'TOOLKIT',
-    skills: ['Git', 'GitHub', 'VS Code', 'IntelliJ IDEA', 'Appwrite', 'n8n', 'Cursor', 'Trae', 'Lovable', 'Bolt.new', 'Google Antigravity', 'Grok', 'ChatGPT', 'Gemini', 'Claude']
+    skills: ['Git', 'GitHub', 'VS Code', 'IntelliJ IDEA', 'Appwrite', 'n8n', 'Cursor', 'Lovable', 'ChatGPT', 'Gemini', 'Claude']
   },
   { 
     title: 'Algorithmic Problem Solving', 
